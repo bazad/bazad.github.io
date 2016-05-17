@@ -1,0 +1,39 @@
+// Typography
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace-font-family: Consolas, Menlo, monospace;
+$font-size: 1rem;
+$font-size-xxl: 2.5rem;
+$font-size-xl: 2rem;
+$font-size-lg: 1.5rem;
+$font-size-mdlg: 1.25rem;
+$font-size-md: 1.15rem;
+$font-size-mdsm: 0.9rem;
+$font-size-sm: 0.8rem;
+$text-color: #383838;
+$link-color: #4d96c6;
+$blockquote-text-color: #666;
+
+// Colors
+$background-color: #fff;
+$border-color: #eee;
+$border-color-dark: #ccc;
+$blockquote-bar-color: #ddd;
+$code-background-color: rgba(0, 0, 0, 0.03);
+
+// Transition points
+$screen-size-md:   50rem;   // 800px
+$screen-size-mdsm: 37rem;   // 592px
+$screen-size-sm:   30rem;   // 480px
+$screen-size-xs:   21rem;   // 336px
+
+// Padding
+$padding-lg: 40px;
+$padding-md: 30px;
+$padding-sm: 20px;
+$padding-xs: 12px;
+
+// Site dimensions
+$site-max-width: 900px;
+$header-max-width: 1200px;
+
+$border-radius: 4px;

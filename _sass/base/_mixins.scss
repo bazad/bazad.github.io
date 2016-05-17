@@ -1,0 +1,50 @@
+// Media breakpoints
+
+@mixin screen-xs {
+	@media screen and (min-width: $screen-size-xs) {
+		@content;
+	}
+}
+@mixin screen-sm {
+	@media screen and (min-width: $screen-size-sm) {
+		@content;
+	}
+}
+@mixin screen-mdsm {
+	@media screen and (min-width: $screen-size-mdsm) {
+		@content;
+	}
+}
+@mixin screen-md {
+	@media screen and (min-width: $screen-size-md) {
+		@content;
+	}
+}
+
+// Font size
+
+%font-size-lg {
+	font-size: $font-size-mdlg;
+	@include screen-sm {
+		font-size: $font-size-lg;
+	}
+}
+%font-size-xl {
+	font-size: $font-size-mdlg;
+	@include screen-xs {
+		font-size: $font-size-lg;
+	}
+	@include screen-md {
+		font-size: $font-size-xl;
+	}
+}
+%font-size-xxl {
+	font-size: $font-size-lg;
+	@include screen-xs {
+		font-size: $font-size-xl;
+	}
+	@include screen-md {
+		font-size: $font-size-xxl;
+	}
+}
+

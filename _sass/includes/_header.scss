@@ -1,0 +1,52 @@
+.site-header {
+	padding: $padding-md;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $header-max-width;
+	border-bottom: 1px solid $border-color;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	img.site-logo {
+		@extend %font-size-xxl;
+		width: 1em;
+		height: 1em;
+	}
+
+	a.site-logo {
+		align-self: center;
+	}
+
+	a {
+		color: $text-color;
+	}
+
+	.site-title {
+		align-self: baseline;
+		margin: 0;
+		@extend %font-size-xl;
+	}
+
+	.space {
+		flex: 1;
+	}
+
+	.padding {
+		flex-shrink: 1;
+		flex-basis: $padding-xs;
+	}
+
+	.site-navigation {
+		align-self: baseline;
+		margin-left: auto;
+		font-size: $font-size-md;
+		ul {
+			margin-top: 0.5em;
+			margin-bottom: 0;
+		}
+		li {
+			display: inline;
+		}
+	}
+}

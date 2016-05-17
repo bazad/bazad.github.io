@@ -1,0 +1,26 @@
+<header class="site-header">
+	{% if site.logo %}
+	<a class="site-logo" href="/">
+		<img class="site-logo" src="/img/{{ site.logo }}" alt=""/>
+	</a>
+	<div class="padding"></div>
+	{% endif %}
+	<h1 class="site-title">
+		<a href="/">{{ site.title }}</a>
+	</h1>
+	<div class="space padding"></div>
+	<nav class="site-navigation">
+		<ul>
+			{% for page in site.pages %}
+			{% if page.title and page.header-navigation %}
+			<li>
+				<a class="page-link" href="{{ page.url }}">
+					{{ page.title }}
+				</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+			{% include icons.html %}
+		</ul>
+	</nav>
+</header>

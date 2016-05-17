@@ -1,0 +1,9 @@
+{% for social in site.social %}
+{% if social.url %}
+<li>
+	<a href="{{ social.url }}" title="{{ social.description }}">
+			<i class="fa fa-fw fa-{{ social.icon }}"></i>
+	</a>
+</li>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,6 @@
+<p class="byline-dateline">
+	{% if include.page.author %}
+	<span class="byline"{% if include.color %} style="color:{{ include.color }}"{% endif %}>by <span class="byline-author">{{ include.page.author }}</span></span>
+	{% endif %}
+	<span class="dateline"{% if include.color %} style="color:{{ include.color }}"{% endif %}>{{ include.page.date | date: "%B %-d, %Y" }}</span>
+</p>

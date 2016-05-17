@@ -1,0 +1,16 @@
+p.byline-dateline {
+	font-size: $font-size-mdsm;
+	font-style: italic;
+	color: rgba($text-color, 0.75);
+	margin-top: 0.5em;
+
+	span.byline {
+		span.byline-author {
+			color: $text-color;
+		}
+		margin-right: 1em;
+	}
+
+	span.dateline {
+	}
+}

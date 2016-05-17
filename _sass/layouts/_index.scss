@@ -1,0 +1,20 @@
+div.posts {
+	article.excerpt {
+		margin: $padding-md 0;
+		padding-top: $padding-md;
+		border-top: 1px solid $border-color;
+
+		header {
+			h1 {
+				margin: 0;
+				margin-bottom: 0.2em;
+			}
+		}
+	}
+
+	article.excerpt:first-child {
+		margin-top: 0;
+		padding-top: 0;
+		border-top: 0;
+	}
+}

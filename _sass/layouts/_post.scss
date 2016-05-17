@@ -1,0 +1,13 @@
+article.post {
+	margin-bottom: $padding-lg;
+
+	header {
+		text-align: center;
+		margin: 0;
+		margin-bottom: $padding-lg;
+		h1 {
+			margin: 0;
+			margin-bottom: $padding-sm;
+		}
+	}
+}

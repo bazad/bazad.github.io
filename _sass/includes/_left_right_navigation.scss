@@ -1,0 +1,25 @@
+.left-right-navigation {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: $padding-md;
+
+	.left, .right {
+		display: flex;
+		align-items: center;
+		margin-top: 1em;
+	}
+	.left {
+		margin-right: 1em;
+		div {
+			margin-left: 0.5em;
+		}
+	}
+	.right {
+		margin-left: auto;
+		text-align: right;
+		div {
+			margin-right: 0.5em;
+		}
+	}
+}

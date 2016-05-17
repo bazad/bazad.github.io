@@ -1,0 +1,15 @@
+article.page {
+	margin-bottom: $padding-lg;
+
+	header {
+		text-align: center;
+	}
+}
+
+article.feature-image {
+	header {
+		padding: 2rem 2rem;
+		background-size: cover;
+		background-position: center center;
+	}
+}

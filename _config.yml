@@ -1,0 +1,39 @@
+# SITE CONFIGURATION
+url: "bazad.github.io"
+
+author: Brandon Azad
+title:  bazad.github.io
+logo:   bazad.svg
+description: "Brandon Azad's security blog"
+
+excerpt_separator: "<!--more-->"
+
+social:
+  - icon:           rss
+    url:            /feed.xml
+    description:    RSS feed
+  - icon:           github
+    url:            https://github.com/bazad
+    description:    Github
+  - icon:           envelope
+    url:            mailto:bazad@stanford.edu
+    description:    Email
+
+katex: true
+
+permalink: /:year/:month/:title/
+
+paginate: 16
+paginate_path: "page/:num"
+post_navigation: true
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+gems:
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

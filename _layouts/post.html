@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post{% if page.feature-image %} feature-image{% endif %}">
+	<header{% if page.feature-image %} style="background-image:url('/{{ page.feature-image }}');{% if page.feature-image-text-color %}color:{{ page.feature-image-text-color }}{% endif %}"{% endif %}>
+		<h1 class="title">{{ page.title }}</h1>
+		{% include byline_dateline.html page=page color=page.feature-image-text-color %}
+	</header>
+	<section class="post-content">{{ content }}</section>
+</article>
+{% if site.post_navigation %}
+<div class="left-right-navigation">
+	{% if page.next.url %}
+	<a class="left" href="{{ page.next.url }}">
+		<i class="fa fa-chevron-left"></i>
+		<div>{{ page.next.title }}</div>
+	</a>
+	{% endif %}
+	{% if page.previous.url %}
+	<a class="right" href="{{ page.previous.url }}">
+		<div>{{ page.previous.title }}</div>
+		<i class="fa fa-chevron-right"></i>
+	</a>
+	{% endif %}
+</div>
+{% endif %}
