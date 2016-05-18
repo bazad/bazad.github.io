@@ -1,0 +1,610 @@
+<?xml version="1.0"?>
+<svg width="16cm" height="9.6cm" viewBox="0 0 200 120"
+     xmlns="http://www.w3.org/2000/svg" version="1.1"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     onload="document.documentElement.pauseAnimations()"
+     onclick="document.documentElement.unpauseAnimations(); document.documentElement.setCurrentTime(0)">
+
+    <defs>
+
+        <!-- Triangular arrow head -->
+
+        <marker id="triangle"
+                viewBox="0 0 10 10" refX="5" refY="5"
+                markerUnits="strokeWidth"
+                markerWidth="4" markerHeight="3"
+                orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z"
+                  fill="gray"/>
+        </marker>
+
+    </defs>
+
+    <!-- Border -->
+
+    <rect x="0" y="0"
+          width="200" height="120"
+          fill="white" fill-opacity="0.8"
+          stroke="black" stroke-width="0.5"/>
+
+    <!-- Code -->
+
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;dict&gt;</tspan>
+        <animate id="frame0"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="0.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame1.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;a&lt;/key&gt;</tspan>
+        <animate id="frame1"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="circle0.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame2.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;integer&gt;10&lt;/integer&gt;</tspan>
+        <animate id="frame2"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="keyA.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame3.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;b&lt;/key&gt;</tspan>
+        <animate id="frame3"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block1_OSNumber_fill.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame4.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;integer&gt;20&lt;/integer&gt;</tspan>
+        <animate id="frame4"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="keyB.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame5.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;a&lt;/key&gt;</tspan>
+        <animate id="frame5"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block2_OSNumber_fill.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame6.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;true/&gt;</tspan>
+        <animate id="frame6"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="circle5.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame7.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;b&lt;/key&gt;</tspan>
+        <animate id="frame7"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block1_free.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame8.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;true/&gt;</tspan>
+        <animate id="frame8"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="circle7.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame9.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;a&lt;/key&gt;</tspan>
+        <animate id="frame9"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block2_free.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame10.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;data&gt; vtable ptr &lt;/data&gt;</tspan>
+        <animate id="frame10"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="circle9.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame11.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;key&gt;b&lt;/key&gt;</tspan>
+        <animate id="frame11"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block1_corrupt.end + 1.5s"
+                 fill="freeze" />
+        <animate attributeName="opacity"
+                 from="1" to="0" dur="0.2s"
+                 begin="frame12.begin - 0.2s"
+                 fill="freeze" />
+    </text>
+    <text class="code" text-anchor="middle"
+          x="100" y="107.5" opacity="0">
+        <tspan alignment-baseline="mathematical">&lt;object&gt;2&lt;/object&gt;</tspan>
+        <animate id="frame12"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="circle11.end + 1.5s"
+                 fill="freeze" />
+    </text>
+
+    <!-- Labels -->
+
+    <text class="label" text-anchor="middle"
+          x="18" y="12.5">key</text>
+
+    <text class="label" text-anchor="middle"
+          x="88" y="12.5">value</text>
+
+    <text class="label" text-anchor="middle"
+          x="165" y="12.5">free list</text>
+
+    <!-- objsArray -->
+
+    <text class="code" text-anchor="left" alignment-baseline="mathematical"
+          x="10" y="87.5">objsArray</text>
+
+    <path d="M 35 85 h 130 v -10 h -130 v 10
+             h 10 v -10 h 10 v 10
+             h 10 v -10 h 10 v 10
+             h 10 v -10 h 10 v 10
+             h 10 v -10 h 10 v 10
+             h 10 v -10 h 10 v 10
+             h 10 v -10 h 10 v 10"
+          stroke="black" stroke-width="0.5" fill="none"/>
+
+    <!-- Pointer circles -->
+
+    <circle fill="gray"
+            cx="40" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle0"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame0.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="50" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle1"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame1.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="60" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle2"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame2.begin + 0.5s"
+                 fill="freeze" />
+        <animate attributeName="r"
+                 from="1.5" to="2.5" dur="0.4s"
+                 begin="block1_arrow_pulse.begin"
+                 fill="freeze" />
+        <animate attributeName="r"
+                 from="2.5" to="1.5" dur="0.4s"
+                 begin="block1_arrow_fade.begin"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="70" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle3"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame3.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="80" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle4"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame4.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="90" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle5"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame5.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="100" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle6"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame6.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="110" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle7"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame7.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="120" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle8"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame8.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="130" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle9"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame9.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="140" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle10"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame10.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="150" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle11"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame11.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+    <circle fill="gray"
+            cx="160" cy="80" r="1.5"
+            opacity="0">
+        <animate id="circle12"
+                 attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="frame12.begin + 0.5s"
+                 fill="freeze" />
+    </circle>
+
+    <!-- Dictionary keys -->
+
+    <g transform="translate(18,19)"
+       opacity="0">
+        <rect x="-8" y="0"
+              width="16" height="16"
+              fill="none" stroke="black" stroke-width="0.5" />
+        <text class="code"
+              text-anchor="middle"
+              alignment-baseline="middle"
+              x="0" y="8">a</text>
+        <animate id="keyA"
+                 attributeName="opacity"
+                 to="1" dur="0.2s"
+                 begin="circle1.begin"
+                 fill="freeze" />
+    </g>
+
+    <g transform="translate(18,47)"
+       opacity="0">
+        <rect x="-8" y="0"
+              width="16" height="16"
+              fill="none" stroke="black" stroke-width="0.5" />
+        <text class="code"
+              text-anchor="middle"
+              alignment-baseline="middle"
+              x="0" y="8">b</text>
+        <animate id="keyB"
+                 attributeName="opacity"
+                 to="1" dur="0.2s"
+                 begin="circle3.begin"
+                 fill="freeze" />
+    </g>
+
+    <!-- Blocks -->
+
+    <g id="block1"
+       transform="translate(165,19)">
+        <rect x="-25" y="0"
+              width="0" height="16"
+              fill="red">
+            <animate id="block1_corrupt"
+                     attributeName="width"
+                     from="0" to="11" dur="0.4s"
+                     begin="block1_alloc2.end + 0.8s"
+                     fill="freeze" />
+        </rect>
+        <rect x="-25" y="0"
+              width="50" height="16"
+              fill="none" stroke="black" stroke-width="0.5" />
+        <text class="block"
+              text-anchor="middle" alignment-baseline="hanging"
+              x="0" y="17">block1</text>
+        <text id="block1-OSNumber" class="code"
+              text-anchor="middle"
+              x="0" y="8"
+              opacity="0">
+            <tspan alignment-baseline="middle">OSNumber</tspan>
+            <animate id="block1_OSNumber_fill"
+                     attributeName="opacity"
+                     from="0" to="1" dur="0.2s"
+                     begin="block2_advance1.end + 0.5s"
+                     fill="freeze" />
+            <animate id="block1_OSNumber_fade"
+                     attributeName="opacity"
+                     from="1" to="0.3" dur="0.2s"
+                     begin="block1_free.begin"
+                     fill="freeze" />
+        </text>
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          from="165,19" to="165,19"
+                          begin="0s"
+                          fill="freeze" />
+        <animateMotion id="block1_alloc1"
+                       path="M 0 0 h -77"
+                       dur="0.4s"
+                       begin="circle2.begin"
+                       fill="freeze" />
+        <animateMotion id="block1_free"
+                       path="M -77 0 h 77"
+                       dur="0.4s"
+                       begin="circle6.begin"
+                       fill="freeze" />
+        <animateMotion id="block1_retreat1"
+                       path="M 0 0 v 28"
+                       dur="0.2s"
+                       begin="circle8.begin"
+                       fill="freeze" />
+        <animateMotion id="block1_advance1"
+                       path="M 0 28 v -28"
+                       dur="0.2s"
+                       begin="block2_alloc2.end - 0.1s"
+                       fill="freeze" />
+        <animateMotion id="block1_alloc2"
+                       path="M 0 0 h -50"
+                       dur="0.3s"
+                       begin="block2_OSData_fill.end + 0.5s"
+                       fill="freeze" />
+    </g>
+
+    <g id="block2"
+       transform="translate(165,47)">
+        <rect x="-25" y="0"
+              width="50" height="16"
+              fill="none" stroke="black" stroke-width="0.5">
+            <animate attributeName="width"
+                     from="50" to="40" dur="0.3s"
+                     begin="block2_alloc2.begin"
+                     fill="freeze" />
+            <animate attributeName="x"
+                     from="-25" to="-20" dur="0.3s"
+                     begin="block2_alloc2.begin"
+                     fill="freeze" />
+        </rect>
+        <text class="block"
+              text-anchor="middle" alignment-baseline="hanging"
+              x="0" y="17">block2</text>
+        <text id="block2-OSNumber"
+              class="code"
+              text-anchor="middle"
+              x="0" y="8"
+              opacity="0">
+            <tspan alignment-baseline="middle">OSNumber</tspan>
+            <animate id="block2_OSNumber_fill"
+                     attributeName="opacity"
+                     from="0" to="1" dur="0.2s"
+                     begin="block2_alloc1.end + 0.5s"
+                     fill="freeze" />
+            <animate id="block2_OSNumber_fade"
+                     attributeName="opacity"
+                     from="1" to="0.3" dur="0.2s"
+                     begin="block2_free.begin"
+                     fill="freeze" />
+        <animate id="block2_OSNumber_clear"
+                 xlink:href="#block2-OSNumber"
+                 attributeName="opacity"
+                 from="0.3" to="0" dur="0.1s"
+                 begin="block1_advance1.end + 0.5s"
+                 fill="freeze" />
+        </text>
+        <text id="block2-OSData"
+              class="code"
+              text-anchor="middle"
+              x="0" y="8"
+              opacity="0">
+            <tspan alignment-baseline="middle">OSData</tspan>
+            <animate id="block2_OSData_fill"
+                     attributeName="opacity"
+                     from="0" to="1" dur="0.2s"
+                     begin="block2_OSNumber_clear.end"
+                     fill="freeze" />
+        </text>
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          from="165,47" to="165,47"
+                          begin="0s"
+                          fill="freeze" />
+        <animateMotion id="block2_advance1"
+                       path="M 0 0 v -28"
+                       dur="0.2s"
+                       begin="block1_alloc1.end - 0.1s"
+                       fill="freeze" />
+        <animateMotion id="block2_alloc1"
+                       path="M 0 -28 c -3 30 -65 27 -77 28"
+                       dur="0.4s"
+                       begin="circle4.begin"
+                       fill="freeze" />
+        <animateMotion id="block2_free"
+                       path="M -77 0 c 3 -30 65 -27 77 -28"
+                       dur="0.4s"
+                       begin="block1_retreat1.begin + 0.2s"
+                       fill="freeze" />
+        <animateMotion id="block2_alloc2"
+                       path="M 0 -28 h -77"
+                       dur="0.4s"
+                       begin="circle10.begin"
+                       fill="freeze" />
+        <animateMotion id="block2_shift"
+                       path="M -77 -28 h -29"
+                       dur="0.2s"
+                       begin="block1_alloc2.begin + 0.1s"
+                       fill="freeze" />
+    </g>
+
+    <!-- Arrows -->
+
+    <line x1="60" y1="80" x2="140" y2="35"
+          marker-end="url(#triangle)" stroke="gray" stroke-width="0.75"
+          opacity="0">
+        <animate attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block1_alloc1.begin"
+                 fill="freeze" />
+        <animate attributeName="x2"
+                 from="140" to="63" dur="0.4s"
+                 begin="block1_alloc1.begin"
+                 fill="freeze" />
+        <animate attributeName="x2"
+                 from="63" to="140" dur="0.4s"
+                 begin="block1_free.begin"
+                 fill="freeze" />
+        <animate attributeName="y2"
+                 from="35" to="63" dur="0.2s"
+                 begin="block1_retreat1.begin"
+                 fill="freeze" />
+        <animate attributeName="y2"
+                 from="63" to="35" dur="0.2s"
+                 begin="block1_advance1.begin"
+                 fill="freeze" />
+        <animate attributeName="x2"
+                 from="140" to="90" dur="0.3s"
+                 begin="block1_alloc2.begin"
+                 fill="freeze" />
+        <animate id="block1_arrow_pulse"
+                 attributeName="stroke-width"
+                 from="0.75" to="2" dur="0.4s"
+                 begin="circle12.begin"
+                 fill="freeze" />
+        <animate id="block1_arrow_fade"
+                 attributeName="stroke-width"
+                 from="2" to="0.75" dur="0.4s"
+                 begin="block1_arrow_pulse.end"
+                 fill="freeze" />
+    </line>
+
+    <line x1="108" y1="27" x2="140" y2="27"
+          marker-end="url(#triangle)" stroke="gray" stroke-width="0.75"
+          opacity="0">
+        <animate attributeName="opacity"
+                 from="0" to="1" dur="0.2s"
+                 begin="block1_alloc2.begin"
+                 fill="freeze" />
+        <animate attributeName="x1"
+                 from="108" to="79" dur="0.2s"
+                 begin="block2_shift.begin"
+                 fill="freeze" />
+        <animate attributeName="x2"
+                 from="140" to="90" dur="0.3s"
+                 begin="block1_alloc2.begin"
+                 fill="freeze" />
+    </line>
+
+<style><![CDATA[
+
+text.label {
+    font: 12px Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+}
+
+text.code {
+    font: 8px monospace;
+}
+
+text.block {
+    font: 6px monospace;
+}
+
+]]></style>
+</svg>
