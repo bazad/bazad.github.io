@@ -2,7 +2,7 @@
 layout: post
 title: "physmem: Accessing Physical Memory from User Space on OS X"
 author: Brandon Azad
-date: 2017-01-12 15:00:00 -0800
+date: 2017-01-16 10:08:00 -0800
 category: security
 tags: [CVE-2016-1825, CVE-2016-7617, macOS]
 description: >
