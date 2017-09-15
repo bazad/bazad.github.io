@@ -16,10 +16,8 @@ social:
     url:            https://github.com/bazad
     description:    Github
   - icon:           envelope
-    url:            mailto:bazad@stanford.edu
+    url:            mailto:bazad@cs.stanford.edu
     description:    Email
-
-katex: true
 
 permalink: /:year/:month/:title/
 
@@ -30,9 +28,6 @@ post_navigation: true
 sass:
   sass_dir: _sass
   style: :compressed
-
-gems:
-  - jekyll-paginate
 
 exclude:
   - Gemfile
