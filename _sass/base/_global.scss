@@ -47,7 +47,22 @@ a {
 }
 
 ol, ul {
-	list-style-position: inside;
+	// Previously we were using list-style-position: inside to align lists
+	// to the containing environment. Unfortunately, this caused the list
+	// to inline the marker with the content, meaning the second line of a
+	// long list item wouldn't get indented. To restore second-line
+	// indentation we're placing the list item marker outside but adding
+	// padding on the left to move the contents inside the box. This is a
+	// bad fix: if the list marker is greater than the padding, it will
+	// stick out of the left margin. However, it looks like this is also
+	// what GitHub does when formatting Markdown, so good enough.
+	//
+	// The padding constant 2.2em was chosen as a balance between making
+	// sure that small list markers don't look too indented and making sure
+	// that numbered lists can go at least into the double digits without
+	// extending past the left margin.
+	list-style-position: outside;
+	padding-left: 2.2em;
 }
 
 p, ol, ul, dl, .math-display {
