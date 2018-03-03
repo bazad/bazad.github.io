@@ -362,7 +362,7 @@ in this payload, including the intermediate register values, is available in the
 code][kernel_call_aarch64.c].
 
 [jump-oriented programming]: https://www.comp.nus.edu.sg/~liangzk/papers/asiaccs11.pdf
-[kernel_call_aarch64.c]: https://github.com/bazad/memctl/blob/master/src/libmemctl/aarch64/kernel_call_aarch64.c
+[kernel_call_aarch64.c]: https://github.com/bazad/memctl/blob/5e63e2b32a0ff643149be4e0ac2b448ec2a29976/src/libmemctl/aarch64/kernel_call_aarch64.c
 
 At a high level, we will construct a JOP payload in kernel memory and then use the generic kernel
 function call method we just established to start executing that payload. The generic function call
