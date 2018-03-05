@@ -1,0 +1,21 @@
+<figure class="center">
+	{% if include.link %}
+	<a href="{{ include.link }}">
+	{% elsif include.link != false %}
+	<a href="{{ include.image }}">
+	{% endif %}
+	<img src="{{ include.image }}"
+	     alt="{{ include.description | default: include.title }}"
+	     {% if include.max-height %}
+	     style="max-height: {{ include.max-height }}"
+	     {% endif %}
+	     title="{{ include.title }}"/>
+	{% if include.link != false %}
+	</a>
+	{% endif %}
+	{% if include.caption %}
+	<figcaption>
+		{{ include.caption }}
+	</figcaption>
+	{% endif %}
+</figure>

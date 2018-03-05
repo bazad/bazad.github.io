@@ -44,9 +44,16 @@
 		ul {
 			margin-top: 0.5em;
 			margin-bottom: 0;
-		}
-		li {
-			display: inline;
+			li {
+				display: inline;
+				padding: 0 0.2em;
+			}
+			li:first-child {
+				padding-left: 0;
+			}
+			li:last-child {
+				padding-right: 0;
+			}
 		}
 	}
 }

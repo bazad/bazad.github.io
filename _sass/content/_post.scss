@@ -1,4 +1,12 @@
 figure.center {
 	margin: 1em auto;
 	text-align: center;
+	img {
+		max-height: 500px;
+		height: auto;
+		width: auto;
+	}
+	figcaption {
+		margin: 0.5em 2em;
+	}
 }
