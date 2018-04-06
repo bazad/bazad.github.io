@@ -3,6 +3,7 @@ layout: post
 title: "Who put that kernel pointer in my crash log?"
 author: Brandon Azad
 date: 2018-04-06 10:15:00 -0700
+modified: 2018-04-06 11:30:00 -0700
 category: security
 tags: [iOS]
 description: >
@@ -169,7 +170,7 @@ were specifically designed to protect against Meltdown.
 The file `osfmk/arm64/locore.s` is responsible for, among other things, implementing the ARM
 exception vectors. `Lel0_synchronous_vector_64`, the exception vector invoked on a system call
 (instruction `svc #0`), was significantly changed while adding support for
-`__ARM_KERNEL_PROTECT__`. In iOS 10.2, the implementation looks like this:
+`__ARM_KERNEL_PROTECT__`. In iOS 11.2, the implementation looks like this:
 
 {% highlight assembly %}
 	.text
@@ -301,16 +302,21 @@ href="https://twitter.com/jaakerblom/status/981894636141727745?ref_src=twsrc%5Et
 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"
 charset="utf-8"></script> </center>
 
-Intrigued, I looked at the GitHub project by potmdehex (@potmdehex), [extra_recipe_extra_bug], that
-the author mentioned in a reply to the original tweet. It quickly became clear from looking at the
-[source][jailbreak.c:403] that the leak was coming from Mach exception messages containing register
-state for a thread. As it turns out, Mach exception messages use the same state that is returned by
-`thread_get_state`, which means this is another way of triggering the same bug.
+Intrigued, I looked at the GitHub project by John Åkerblom ([@jaakerblom] and [@potmdehex]),
+[extra_recipe_extra_bug], that the author mentioned in a reply to the original tweet. It quickly
+became clear from looking at the [source][jailbreak.c:403] that the leak was coming from Mach
+exception messages containing register state for a thread. As it turns out, Mach exception messages
+use the same state that is returned by `thread_get_state`, which means this is another way of
+triggering the same bug.
 
+[@jaakerblom]: https://twitter.com/jaakerblom
+[@potmdehex]: https://twitter.com/potmdehex
 [extra_recipe_extra_bug]: https://github.com/potmdehex/extra_recipe_extra_bug
 [jailbreak.c:403]: https://github.com/potmdehex/extra_recipe_extra_bug/blob/cf884b25e03c56a757587b5957d8b74c1b288ee7/extra_recipe/jailbreak.c#L403
 
-Shortly after that, Viktor Oreshkin (@stek29) published a brief analysis:
+Shortly after that, Viktor Oreshkin ([@stek29]) published a brief analysis:
+
+[@stek29]: https://twitter.com/stek29
 
 <center> <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So, speaking of
 info leak (found by <a href="https://twitter.com/potmdehex?ref_src=twsrc%5Etfw">@potmdehex</a> I
@@ -321,14 +327,14 @@ href="https://twitter.com/stek29/status/982285394447405056?ref_src=twsrc%5Etfw">
 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"
 charset="utf-8"></script> </center>
 
-After that, I decided to publish my work, even though Apple hadn't updated the advisory yet.
+At that point, I decided to publish my work, even though Apple hadn't updated the advisory yet.
 
 
 ## Conclusion
 
 Given how easy it was to detect, I'm quite surprised that this information leak lasted for nearly 3
 months before it was discovered. I wouldn't be surprised to learn that other parties had found the
-leak earlier but didn't disclosed it.
+leak earlier than me but didn't disclose it.
 
 This bug was an all-around pleasure to find, exploit, and analyze. Stumbling onto a security issue
 by accident is by far my favorite way to find a bug. Not only that, I quite enjoyed the experience
