@@ -4,3 +4,8 @@
 	{% endif %}
 	<span class="dateline"{% if include.color %} style="color:{{ include.color }}"{% endif %}>{{ include.page.date | date: "%B %-d, %Y" }}</span>
 </p>
+{% if include.show_modified and include.page.modified %}
+<p class="byline-dateline">
+	<span class="dateline"{% if include.color %} style="color:{{ include.color }}"{% endif %}>updated {{ include.page.modified | date: "%B %-d, %Y" }}</span>
+</p>
+{% endif %}

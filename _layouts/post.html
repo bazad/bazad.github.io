@@ -4,7 +4,7 @@ layout: default
 <article class="post{% if page.feature-image %} feature-image{% endif %}">
 	<header{% if page.feature-image %} style="background-image:url('/{{ page.feature-image }}');{% if page.feature-image-text-color %}color:{{ page.feature-image-text-color }}{% endif %}"{% endif %}>
 		<h1 class="title">{{ page.title }}</h1>
-		{% include byline_dateline.html page=page color=page.feature-image-text-color %}
+		{% include byline_dateline.html page=page color=page.feature-image-text-color show_modified=true %}
 	</header>
 	<section class="post-content">{{ content }}</section>
 </article>
