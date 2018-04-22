@@ -12,6 +12,9 @@ social:
   - icon:           rss
     url:            /feed.xml
     description:    RSS feed
+  - icon:           twitter
+    url:            https://twitter.com/_bazad
+    description:    Twitter
   - icon:           github
     url:            https://github.com/bazad
     description:    Github
