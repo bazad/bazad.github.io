@@ -7,7 +7,7 @@ modified: 2018-04-06 11:30:00 -0700
 category: security
 tags: [iOS]
 description: >
-  In February 2018 I noticed that kernel pointers were showing up in register `x18` of iOS crash
+  In February 2018 I noticed that kernel pointers were showing up in register x18 of iOS crash
   logs. Figuring out why took me all the way back to the Meltdown vulnerability and the buggy fix
   that made it trivial to bypass Apple's kernel ASLR defense.
 ---
