@@ -27,7 +27,7 @@ I reported this issue to Apple in January of 2016, and it was assigned [CVE-2016
 variant CVE-2016-7617) is available in my [physmem] repository on GitHub. This vulnerability is not
 present on iOS.
 
-[CVE-2016-1825]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1825
+[CVE-2016-1825]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1825
 [fixed]: https://support.apple.com/en-us/HT206567
 [physmem]: https://github.com/bazad/physmem
 
@@ -509,7 +509,7 @@ This was a nearly identical issue in `AppleBroadcomBluetoothHostController`. You
 this vulnerability at [Project Zero].
 
 [patched]: https://support.apple.com/en-us/HT207423
-[CVE-2016-7617]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-7617
+[CVE-2016-7617]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7617
 [Project Zero]: https://bugs.chromium.org/p/project-zero/issues/detail?id=974
 
 ## Mitigations as of macOS 10.12.2

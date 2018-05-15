@@ -26,7 +26,7 @@ virtual method on an object with a controlled vtable pointer. I leveraged the
 use-after-free to create a NULL pointer dereference, allowing the vtable and
 the ROP stack to live in user space.
 
-[CVE-2016-1828]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1828
+[CVE-2016-1828]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1828
 
 [CVE-2016-1758] is a kernel stack disclosure in the function `if_clone_list`. 8
 bytes of uninitialized kernel stack are copied to user space. Those bytes can
@@ -35,7 +35,7 @@ system call prior to triggering the disclosure. After leaking the text segment
 pointer, the kernel slide can be computed by subtracting the base address of
 that particular text segment location from the leaked address.
 
-[CVE-2016-1758]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1758
+[CVE-2016-1758]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1758
 
 <!--more-->
 
