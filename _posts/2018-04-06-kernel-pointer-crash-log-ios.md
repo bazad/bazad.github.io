@@ -3,7 +3,7 @@ layout: post
 title: "Who put that kernel pointer in my crash log?"
 author: Brandon Azad
 date: 2018-04-06 10:15:00 -0700
-modified: 2018-04-06 11:30:00 -0700
+modified: 2018-09-24 15:15:00 -0700
 category: security
 tags: [iOS]
 description: >
@@ -343,6 +343,13 @@ writing a single line of code. And to top it all off, I learned that the bug was
 introduced by the mitigation against Meltdown! (Who'd have thought that the fix for a really big
 information leak would introduce a small information leak?) Quite good fun, and I hope we never see
 its like again.
+
+
+## Update (2018.09.24)
+
+Apple assigned this issue CVE-2018-4185 and updated their advisory for [iOS 11.3] on July 19, 2018.
+
+[iOS 11.3]: https://support.apple.com/en-us/HT208693
 
 
 ## Footnotes
