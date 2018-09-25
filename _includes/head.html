@@ -6,7 +6,7 @@
 	<meta name="robots" content="noindex">
 	{% endif %}
 
-	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 	{% if page.description %}
 	<meta name="description" content="{{ page.description | strip_html | strip_newlines | truncate: 160 }}">
 	{% elsif page.excerpt %}
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="/css/main.css">
 
 	<!--Favicon-->
-	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
